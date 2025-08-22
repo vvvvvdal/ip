@@ -1,16 +1,23 @@
 #include <stdio.h>
 
+void questao1() {
+        int a, b;
+
+    // digite o a
+    scanf("%d", &a);
+
+    // digite o b
+    scanf("%d", &b);
+
+    double m = (a+b)/2.0;
+
+    // a média é: 
+    printf("%.3lf", m);
+}
+
 int main() {
-    double salario;
-    // digite o salario
-    scanf("%lf", &salario);
-    // salario = 81
-    double qtdEnergia = (1000/7*salario);
 
-    double undEnergia = (7*salario/1000);
-    printf("Custo do consumo: R$ %.2lf", undEnergia);
-
-
+    questao1();
 
     return 0;
 }
