@@ -33,7 +33,7 @@ void questao6() {
     double m = (a+b)/2.0;
 
     // a média é: 
-    printf("%.3lf", m);
+    printf("%.3lf\n\n", m);
 }
 
 int main() {
