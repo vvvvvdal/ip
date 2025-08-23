@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void questao1() {
     double salario;
@@ -76,6 +77,28 @@ void questao6() {
     printf("%.3lf\n\n", m);
 }
 
+void questao7() {
+    float altura, aresta;
+    scanf("%f %f", &altura, &aresta);
+ 
+    float areaBase = (3*aresta*aresta*sqrt(3.0))/2;
+    float volume = (1*areaBase*altura)/3;
+ 
+    printf("O VOLUME DA PIRAMIDE E = %.2f METROS CUBICOS\n", volume);
+}
+
+void questao8() {
+    int horas, minutos, segundos;
+    scanf("%d %d %d", &horas, &minutos, &segundos);
+
+    int convHoras = horas * 3600;
+    int convMinutos = minutos * 60;
+
+    int tempoTotal = convHoras + convMinutos + segundos;
+
+    printf("O TEMPO EM SEGUNDOS E = %d\n", tempoTotal);
+}
+
 int main() {
         
         questao1();
@@ -83,6 +106,8 @@ int main() {
         questao4();
         questao5();
         questao6();
-
+        questao7();
+        questao8();
+    
     return 0;
 }
