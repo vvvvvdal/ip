@@ -52,6 +52,15 @@ void questao4() {
     printf("O VALOR DE DELTA E = %.2lf\n\n", delta);
 }
 
+void questao5() {
+    float a, b, c, d;
+    scanf("%f %f %f %f", &a, &b, &c, &d);
+    
+    float det = (a*d) - (b*c);
+    
+    printf("O VALOR DO DETERMINANTE E = %.2f\n", det);
+}
+
 void questao6() {
         int a, b;
 
@@ -72,6 +81,7 @@ int main() {
         questao1();
         questao2();
         questao4();
+        questao5();
         questao6();
 
     return 0;
