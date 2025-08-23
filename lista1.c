@@ -40,6 +40,19 @@ void questao2() {
     printf("A QUANTIDADE DE CHUVA E = %.2lf\n\n", qtdChuva);
 }
 
+void questao4() {
+    double A, B, C;
+
+    // leitura dos valores de A, B e C
+    scanf("%lf", &A);
+    scanf("%lf", &B);
+    scanf("%lf", &C);
+
+    double delta = (B*B) - (4*A*C);
+
+    printf("O VALOR DE DELTA E = %.2lf\n\n", delta);
+}
+
 void questao6() {
         int a, b;
 
@@ -59,6 +72,7 @@ int main() {
         
         questao1();
         questao2();
+        questao4();
         questao6();
 
     return 0;
