@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void questao1() {
     double salario;
     // digite o salario
