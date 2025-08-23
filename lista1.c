@@ -18,7 +18,7 @@ void questao1() {
 
     printf("Custo por kW: R$ %.2lf\n", custokW);
     printf("Custo do consumo: R$ %.2lf\n", custoConsumo);
-    printf("Custo com desconto: R$ %.2lf", custoDesconto);
+    printf("Custo com desconto: R$ %.2lf\n\n", custoDesconto);
 }
 
 void questao6() {
