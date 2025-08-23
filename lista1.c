@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+#define PI 3.14159
+
 void questao1() {
     double salario;
     // digite o salario
@@ -38,6 +40,21 @@ void questao2() {
 
     printf("O VALOR EM CELSIUS = %.2lf\n", tempCel);
     printf("A QUANTIDADE DE CHUVA E = %.2lf\n\n", qtdChuva);
+}
+
+void questao3() {
+    float raio, altura;
+    scanf("%f", &raio);
+    scanf("%f", &altura);
+    
+    float areaCirculo = PI*raio*raio;
+    float areaLateral = 2.00*PI*raio*altura;
+ 
+    float areaTotal = (2.00*areaCirculo) + areaLateral;
+ 
+    float custo = areaTotal*100.00;
+ 
+    printf("O VALOR DO CUSTO E = %.2f\n", custo);
 }
 
 void questao4() {
@@ -123,6 +140,7 @@ int main() {
         
         questao1();
         questao2();
+        questao3();
         questao4();
         questao5();
         questao6();
