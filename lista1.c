@@ -21,6 +21,25 @@ void questao1() {
     printf("Custo com desconto: R$ %.2lf\n\n", custoDesconto);
 }
 
+void questao2() {
+    int tempFar;
+    // digite a temperatura em Farenheit
+    scanf("%d", &tempFar);
+
+    int pol;
+    // digite a quantidade de chuva em polegadas
+    scanf("%d", &pol);
+
+    // cálculo da temperatura de Farenheit para Celsius
+    double tempCel = 5*(tempFar-32)/9.00;
+
+    // cálculo da quantidade de chuvas de polegadas para milímetros
+    double qtdChuva = pol*25.4;
+
+    printf("O VALOR EM CELSIUS = %.2lf\n", tempCel);
+    printf("A QUANTIDADE DE CHUVA E = %.2lf\n\n", qtdChuva);
+}
+
 void questao6() {
         int a, b;
 
@@ -39,6 +58,7 @@ void questao6() {
 int main() {
         
         questao1();
+        questao2();
         questao6();
 
     return 0;
