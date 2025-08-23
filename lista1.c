@@ -99,6 +99,26 @@ void questao8() {
     printf("O TEMPO EM SEGUNDOS E = %d\n", tempoTotal);
 }
 
+void questao9() {
+    double n;
+    scanf("%lf", &n);
+
+    double n10 = 10;
+
+    int i = 0;
+    for(i; i < 3; i++) {
+        
+        double a = n * n10;
+        double b = a + 0.5;
+        int c = b;
+        double d = c / n10;
+
+        printf("%.6lf\n", d);
+
+        n10 *= 10;
+    }
+}
+
 int main() {
         
         questao1();
@@ -108,6 +128,7 @@ int main() {
         questao6();
         questao7();
         questao8();
+        questao9();
     
     return 0;
 }
