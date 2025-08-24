@@ -120,7 +120,7 @@ void questao9() {
     double n;
     scanf("%lf", &n);
 
-    double n10 = 10;
+    double n10 = 10.0;
 
     int i = 0;
     for(i; i < 3; i++) {
