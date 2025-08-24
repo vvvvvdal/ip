@@ -136,6 +136,16 @@ void questao9() {
     }
 }
 
+void questao10() {
+    float la, lb, lc;
+    scanf("%f %f %f", &la, &lb, &lc);
+
+    float t = (la+lb+lc)/2;
+    float area = sqrt(t*(t-la)*(t-lb)*(t-lc));
+
+    printf("A AREA DO TRIANGULO E = %.2f\n", area);
+}
+
 int main() {
         
         questao1();
@@ -147,6 +157,7 @@ int main() {
         questao7();
         questao8();
         questao9();
+        questao10();
     
     return 0;
 }
