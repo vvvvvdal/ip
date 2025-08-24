@@ -155,6 +155,24 @@ void questao11() {
     printf("O VALOR DO CARRO E = %.2f\n", custoconsum);
 }
 
+void questao12() {
+    double m, a, t; // massa em toneladas, aceleração em m/s², tempo em segundos.
+    scanf("%lf %lf %lf", &m,&a, &t);
+    
+    double v0 = 0;
+    double s0 = 0;
+
+    double v = 3.6*(v0 + (a * t)); // v em m/s -> km/h
+    double vms = v/3.6; // v em km/h -> m/s
+    double s = s0 + (v0*t) + (a*t*t)/2;
+    double w = ((1000*m*vms*vms))/2 - ((1000*m*v0*v0))/2;
+
+
+    printf("VELOCIDADE = %.2lf\n", v);
+    printf("ESPACO PERCORRIDO = %.2lf\n", s);
+    printf("TRABALHO REALIZADO = %.2lf\n", w);
+}
+
 int main() {
         
         questao1();
@@ -168,6 +186,7 @@ int main() {
         questao9();
         questao10();
         questao11();
+        questao12();
 
     return 0;
 }
