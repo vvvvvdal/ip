@@ -173,6 +173,15 @@ void questao12() {
     printf("TRABALHO REALIZADO = %.2lf\n", w);
 }
 
+void questao13() {
+    float xa, ya, xb, yb;
+    scanf("%f %f %f %f", &xa, &ya, &xb, &yb);
+
+    float d = sqrt((xb-xa)*(xb-xa) + (yb-ya)*(yb-ya));
+
+    printf("A DISTANCIA ENTRE A e B = %.2f\n", d);
+}
+
 int main() {
         
         questao1();
@@ -187,6 +196,7 @@ int main() {
         questao10();
         questao11();
         questao12();
+        questao13();
 
     return 0;
 }
