@@ -146,6 +146,15 @@ void questao10() {
     printf("A AREA DO TRIANGULO E = %.2f\n", area);
 }
 
+void questao11() {
+    float pFabrica, percDistrib, percImpostos;
+    scanf("%f %f %f", &pFabrica, &percDistrib, &percImpostos);
+
+    float custoconsum = pFabrica + pFabrica*((percDistrib + percImpostos)/100);
+
+    printf("O VALOR DO CARRO E = %.2f\n", custoconsum);
+}
+
 int main() {
         
         questao1();
@@ -158,6 +167,7 @@ int main() {
         questao8();
         questao9();
         questao10();
-    
+        questao11();
+
     return 0;
 }
