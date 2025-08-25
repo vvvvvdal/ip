@@ -182,6 +182,28 @@ void questao13() {
     printf("A DISTANCIA ENTRE A e B = %.2f\n", d);
 }
 
+void questao14() {
+    int n;
+    scanf("%d", &n);
+    int a10, a11, a20, a21, a30, a31;
+
+    // 123/100 = 1.23 -> inteiro ... 1 -> 1 % 10 = 1           // o resto vem da divisão inteira.
+    a10 = n/100;
+    a11 = a10 % 10;
+
+    // 123/100 = 12.3 -> inteiro ... 12 -> 12 % 10 = 2         // o resto vem da divisão inteira.
+    a20 = n/10;
+    a21 = a20 % 10;
+
+    // 123/100 = 123 -> inteiro ... 123 -> 123 % 10 = 3        // o resto vem da divisão inteira.
+    a30 = n/1;
+    a31 = a30 % 10;
+
+    int dControle = (a11 + (a21*3) + (a31*5)) % 7;
+
+    printf("O NOVO NUMERO E = %d%d\n", n, dControle);
+}
+
 int main() {
         
         questao1();
@@ -197,6 +219,7 @@ int main() {
         questao11();
         questao12();
         questao13();
+        questao14();
 
     return 0;
 }
