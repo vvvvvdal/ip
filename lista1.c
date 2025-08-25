@@ -204,6 +204,17 @@ void questao14() {
     printf("O NOVO NUMERO E = %d%d\n", n, dControle);
 }
 
+void questao18() {
+    float a, b, c, d, e, f;
+    scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
+    
+    float x = ((e*c)-(b*f))/((a*e)-(b*d)*1.00);
+    float y = (f - (d*x))/e*1.00;
+
+    printf("O VALOR DE X E = %.2f\n", x);
+    printf("O VALOR DE Y E = %.2f\n", y);
+}
+
 int main() {
         
         questao1();
@@ -220,6 +231,7 @@ int main() {
         questao12();
         questao13();
         questao14();
+        questao18();
 
     return 0;
 }
