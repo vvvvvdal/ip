@@ -204,6 +204,30 @@ void questao14() {
     printf("O NOVO NUMERO E = %d%d\n", n, dControle);
 }
 
+void questao15() {
+    int n;
+    scanf("%d", &n);
+
+    int nbin1, nbin2, nbin3, nbin4, nbin5, nbin6, nbin7, nbin8;
+
+    if(0<= n && n <= 255) {
+
+        nbin1 = n % 2;
+        nbin2 = n/2 % 2;
+        nbin3 = n/4 % 2;
+        nbin4 = n/8 % 2;
+        nbin5 = n/16 % 2;
+        nbin6 = n/32 % 2;
+        nbin7 = n/64 % 2;
+        nbin8 = n/128 % 2;
+        
+        printf("%d%d%d%d%d%d%d%d\n", nbin8, nbin7, nbin6, nbin5, nbin4, nbin3, nbin2, nbin1);
+
+    } else {
+        printf("Numero invalido!\n");
+    }
+}
+
 void questao18() {
     float a, b, c, d, e, f;
     scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
@@ -231,6 +255,7 @@ int main() {
         questao12();
         questao13();
         questao14();
+        questao15();
         questao18();
 
     return 0;
