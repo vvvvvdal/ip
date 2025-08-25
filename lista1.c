@@ -80,7 +80,7 @@ void questao5() {
 }
 
 void questao6() {
-        int a, b;
+    int a, b;
 
     // digite o a
     scanf("%d", &a);
