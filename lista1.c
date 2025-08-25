@@ -228,6 +228,54 @@ void questao15() {
     }
 }
 
+void questao16() {
+    int n;
+    scanf("%d", &n);
+ 
+    int n1, n2, n3;
+ 
+    // pega o primeiro algarismo
+    n1 = n / 100;
+    n1 = n1 % 10;
+ 
+    // pega o segundo algarismo
+    n2 = n / 10;
+    n2 = n2 % 10;
+ 
+    // pega o terceiro algarismo
+    n3 = n / 1;
+    n3 = n3 % 10;
+ 
+    printf("%d%d%d\n", n3, n2, n1);
+}
+
+void questao17() {
+    int valor;
+    scanf("%d", &valor);
+
+    int n100, n50, n10, n1;
+    int vr100, vr50, vr10, vr1;
+
+    vr100 = valor % 100;
+    vr50 = vr100 % 50;
+    vr10 = vr50 % 10;
+    vr1 = vr10 % 1;
+
+    // valor = notas * x + resto
+    // valor - resto = notas * x
+    // x = (valor - resto) / notas
+
+    n100 = (valor - vr100) / 100;
+    n50 = (vr100 - vr50) / 50;
+    n10 = (vr50 - vr10) / 10; 
+    n1 = (vr10 - vr1) / 1;
+
+    printf("NOTAS DE 100 = %d\n", n100);
+    printf("NOTAS DE 50 = %d\n", n50);
+    printf("NOTAS DE 10 = %d\n", n10);
+    printf("MOEDAS DE 1 = %d\n", n1);
+}
+
 void questao18() {
     float a, b, c, d, e, f;
     scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
@@ -256,6 +304,8 @@ int main() {
         questao13();
         questao14();
         questao15();
+        questao16();
+        questao17();
         questao18();
 
     return 0;
