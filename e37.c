@@ -44,17 +44,15 @@ void encontrarDivisoresPrimos(int n) {
  
 int main() {
     int n;
-    scanf("%d", &n);
- 
-    if(n <= 0) {
-        printf("Fatoracao nao e possivel para o numero %d!\n", n);
-        
-        return 0;
- 
-    } else {
-        encontrarDivisoresPrimos(n);
+
+    while(1) {
+        scanf("%d", &n);
+        if(n <= 1) {
+            printf("Fatoracao nao e possivel para o numero %d!\n", n);
+        } else {
+            encontrarDivisoresPrimos(n);
+            break;
+        }
     }
- 
- 
     return 0;
 }
